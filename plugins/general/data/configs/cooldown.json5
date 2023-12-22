@@ -1,0 +1,95 @@
+Made by Alexone
+
+{
+    config: {
+        // Whether cooldowns should be enabled (Boolean)
+        enabled: true,
+        // Default cooldown length (Time)
+        default: "3s",
+        role_bypass: {
+            // Whether certain users should be able to bypass the cooldown (Boolean)
+            enabled: true,
+            // Every user who inherits this role or one above will bypass cooldowns (String)
+            role_id: "804354015638716443"
+        },
+
+// --------------------------
+// ----  GENERAL PLUGIN  ----
+// --------------------------
+        general: {
+            av: "default", // "default" or any timestamp
+            botinfo: "default",
+            help: "default",
+            info: "default",
+            mcserver: "default",
+            ping: "default",
+            restart: "5m",
+            sendmsg: "default",
+            server: "default",
+            setup: "default",
+            stealemoji: "default",
+            uptime: "default",
+
+            // Interactions
+            helpMenuButton: "default",
+            helpMenu: "default"
+        },
+
+// --------------------------
+// ----  TICKET PLUGIN  -----
+// --------------------------
+        tickets: {
+            tadd: "default",
+            tblacklist: "default",
+            tclose: "default",
+            tleaderboard: "default",
+            tpanel: "default",
+            tremove: "default",
+            trename: "default",
+            tunblacklist: "default",
+
+            // Interactions
+            tpanelMenu: "default"
+        },
+
+// ---------------------------
+// ---  MODERATION PLUGIN  ---
+// ---------------------------
+        moderation: {
+            ban: "default",
+            history: "default",
+            kick: "default",
+            lock: "default",
+            mute: "default",
+            purge: "default",
+            slowmode: "default",
+            unban: "default",
+            unlock: "default",
+            unmute: "default",
+            unwarn: "default",
+            warn: "default",
+
+            // Interactions
+            historyButton: "default"
+        },
+
+// ---------------------------
+// ---  GIVEAWAYS PLUGIN  ----
+// ---------------------------
+        giveaways: {
+            giveaway: "default",
+            genter: "default",
+        },
+    },
+
+
+
+
+    // ########################################################
+    // #                                                      #
+    // #  Language Configuration (not required to configure)  #
+    // #                                                      #
+    // ########################################################
+
+    lang: {}
+}

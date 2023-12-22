@@ -1,0 +1,32 @@
+{
+    "name": "Main",
+    "author": "Zeroknights#2373",
+    "version": "1.2.1",
+    "requires_common_version": "1.2.0",
+    "configuration_files": {
+        "commands.json5": {
+            "name": "commands",
+            "path": "./plugins/general/data/configs/"
+        },
+        "confirmation.json5": {
+            "name": "confirmation",
+            "path": "./plugins/general/data/configs/"
+        },
+        "cooldown.json5": {
+            "name": "cooldown",
+            "path": "./plugins/general/data/configs/"
+        },
+        "general.json5": {
+            "name": "general",
+            "path": "./plugins/general/data/configs/"
+        },
+        "lang.json5": {
+            "name": "lang",
+            "path": "./plugins/general/data/configs/"
+        },
+        "permission.json5": {
+            "name": "permission",
+            "path": "./plugins/general/data/configs/"
+        }
+    }
+}

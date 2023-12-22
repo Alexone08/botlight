@@ -1,0 +1,90 @@
+Made by Alexone
+
+{
+    config: {
+        // If set to false the bot uses discord's built in permission system (Boolean)
+        // -> https://support.discord.com/hc/en-us/articles/4644915651095-Command-Permissions
+        enabled: true,
+        // You can add as many roles you want; name: "id" (Object)
+        roles: {
+            management: "757349210872873191",
+            admin: "804354024048427009",
+            staff: "804354029076348959",
+            support: "884573835205148692",
+            member: "804354037662220289",
+        },
+
+// --------------------------
+// ----  GENERAL PLUGIN  ----
+// --------------------------
+        general: {
+            av: "member",
+            botinfo: "member",
+            help: "member",
+            info: "member",
+            mcserver: "member",
+            ping: "member",
+            restart: "management",
+            sendmsg: "management",
+            server: "member",
+            setup: "management",
+            stealemoji: "member",
+            uptime: "member",
+            helpMenuButton: "member",
+            helpMenu: "member"
+        },
+
+// --------------------------
+// ----  TICKET PLUGIN  -----
+// --------------------------
+        tickets: {
+            tadd: "support",
+            tblacklist: "support",
+            tclose: "support",
+            tleaderboard: "support",
+            tpanel: "management",
+            tremove: "support",
+            trename: "support",
+            tunblacklist: "support",
+            tpanelMenu: "member"
+        },
+
+// ---------------------------
+// ---  MODERATION PLUGIN  ---
+// ---------------------------
+        moderation: {
+            ban: "admin",
+            history: "staff",
+            kick: "admin",
+            lock: "staff",
+            mute: "staff",
+            purge: "admin",
+            slowmode: "staff",
+            unban: "staff",
+            unlock: "staff",
+            unmute: "staff",
+            unwarn: "staff",
+            warn: "staff",
+            historyButton: "staff"
+        },
+
+// ---------------------------
+// ---  GIVEAWAYS PLUGIN  ----
+// ---------------------------
+        giveaways: {
+            giveaway: "admin",
+            genter: "member"
+        },
+    },
+
+
+
+
+    // ########################################################
+    // #                                                      #
+    // #  Language Configuration (not required to configure)  #
+    // #                                                      #
+    // ########################################################
+
+    lang: {}
+}

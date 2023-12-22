@@ -1,0 +1,25 @@
+{
+    "version": "1.0.0",
+    "debug": true,
+    "json5": true,
+
+    "console_logs_include_date": true,
+    "console_logs_to_file": true,
+    "console_logs_save_to_file_every": "15m",
+    "console_logs_create_new_file_after_restart": true,
+
+    "anti_crash_not_recommended": true,
+    "regenerate_config_on_load_error": false,
+    "auto_restart_every": "7d",
+
+    "mongodb_uri": "secret",
+    "discord_bot_token": "secret",
+    "discord_bot_id": "secret",
+    "discord_bot_acivities": ["Watching", "0 servers"],
+    "discord_guild_id": "secret",
+
+    "server_name": "Bot free prova",
+    "server_color": "#2C2F33",
+
+    "developer_mode": false
+}

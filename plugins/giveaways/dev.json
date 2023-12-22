@@ -1,0 +1,12 @@
+{
+    "name": "Giveaways",
+    "author": "Zeroknights#2373",
+    "version": "1.0.0",
+    "requires_common_version": "1.2.0",
+    "configuration_files": {
+        "giveaways.json5": {
+            "name": "giveaways",
+            "path": "./plugins/giveaways/data/configs/"
+        }
+    }
+}
