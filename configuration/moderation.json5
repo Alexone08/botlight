@@ -1,0 +1,134 @@
+Made by Alexone
+
+{
+    config: {
+        // Whether log messages should be enabled (Boolean)
+        logs_enabled: true,
+        // Log Channel ID (String)
+        log_channel: "1006590092711841862",
+
+        // Users who own configured role or one above are immune against moderation commands e.g. ban (String)
+        deny_punishments_from: "804354024048427009",
+        // Whether punishments can get overrided
+        override_punishments: true,
+
+        // Whether punished users should get notified that they have been punished (Boolean)
+        dm_notification: true,
+        
+        // Report log channel (String)
+        report_channel: "804354129429397514",
+
+        warn_punishments: [
+        {
+            vls: 3, // Required warnings for this punishment
+            type: "MUTE", // MUTE / BAN / KICK
+            duration: "1d", // e.g. "2h", use "0" for permanent punishment
+            reset: false, //  Whether vls should get reset after this punishment
+        },
+        {
+            vls: 5,
+            type: "MUTE",
+            duration: "7d",
+            reset: true
+        },
+        ],
+
+        // List of role ids that should not be able to write in locked channels (/lock) (Array)
+        lock_mode_lock_roles: [
+            "884573835205148692",
+            "804354028419022888",
+        ],
+    },
+
+
+
+
+    // ########################################################
+    // #                                                      #
+    // #  Language Configuration (not required to configure)  #
+    // #                                                      #
+    // ########################################################
+
+    lang: {
+        success: {
+            // Placeholder: %user_name%
+            ban: "``✅`` **%user_name%** has been __successfully banned__ from this ``Discord``",
+            // Placeholder: %user_name%, %user_id%, %manual%, %staff_name%, %staff_id%, %reason%, %proof%
+            ban_log: "```js\n%user_name% has been %type% banned\n```\n```yaml\nUser: %user_name% (%user_id%)\nManual: %manual%\nBy: %staff_name% (%staff_id%)\nDuration: %duration%\nReason: %reason%\nProof: %proof%```",
+            // Placeholder: %user_name%
+            kick: "``✅`` **%user_name%** has been __successfully kicked__ from this ``Discord``",
+            // Placeholder: %user_name%, %user_id%, %manual%, %staff_name%, %staff_id%, %reason%, %proof%
+            kick_log: "```js\n%user_name% has been kicked\n```\n```yaml\nUser: %user_name% (%user_id%)\nManual: %manual%\nBy: %staff_name% (%staff_id%)\nReason: %reason%\nProof: %proof%```",
+            // Placeholder: %user_name%
+            mute: "``✅`` **%user%** has been __successfully muted__ in this ``Discord``",
+            // Placeholder: %user_name%, %type%, %user_id%, %manual%, %staff_name%, %staff_id%, %duration%, %reason%, %proof%
+            mute_log: "```js\n%user_name% has been %type% muted\n```\n```yaml\nUser: %user_name% (%user_id%)\nManual: %manual%\nBy: %staff_name% (%staff_id%)\nDuration: %duration%\nReason: %reason%\nProof: %proof%```",
+            // Placeholder: %user_id%
+            unban: "``✅`` **%user_id%** has been __successfully unbanned__ from this ``Discord``",
+            // Placeholder: %user_id%, %manual%, %staff_name%, %staff_id%, %reason%, %proof%
+            unban_log: "```js\n%user_id% has been unbanned\n```\n```yaml\nUser: %user_id%\nManual: %manual%\nBy: %staff_name% (%staff_id%)\nReason: %reason%\nProof: %proof%```",
+            // Placeholder: %user%
+            unmute: "``✅`` **%user%** has been __successfully unmuted__ in this ``Discord``",
+            // Placeholder: %user_name%, %user_id%, %manual%, %staff_name%, %staff_id%, %reason%, %proof%
+            unmute_log: "```js\n%user_name% has been unmuted\n```\n```yaml\nUser: %user_name% (%user_id%)\nManual: %manual%\nBy: %staff_name% (%staff_id%)\nReason: %reason%\nProof: %proof%```",
+            // Placeholder: %user%
+            warn: "``✅`` **%user%** has been __successfully warned__",
+            // Placeholder: %user_name%, %user_id%, %staff_name%, %staff_id%, %warnings%, %active_warnings%, %reason%, %proof%
+            warn_log: "```js\n%user_name% has been warned\n```\n```yaml\nUser: %user_name% (%user_id%)\nBy: %staff_name% (%staff_id%)\nTotal Warnings: %warnings% (Active: %active_warnings%)\nReason: %reason%\nProof: %proof%```",
+            // Placeholder: %user%
+            unwarn: "``✅`` **%user%** has been __successfully unwarned__",
+            // Placeholder: %user_name%, %user_id%, %staff_name%, %staff_id%, %warnings%, %active_warnings%, %reason%, %proof%
+            unwarn_log: "```js\n%user_name% has been unwarned\n```\n```yaml\nUser: %user_name% (%user_id%)\nBy: %staff_name% (%staff_id%)\nTotal Warnings: %warnings% (Active: %active_warnings%)\nReason: %reason%\nProof: %proof%```",
+            // Placeholder: %channel%, %time%
+            slowmode: "``✅`` **Successfully** updated %channel%'s __ratelimit__ to ``%time%``",
+            // Placeholder: %channel%
+            lock: "``✅`` **Successfully** __locked__ channel %channel%",
+            // Placeholder: %channel%
+            unlock: "``✅`` **Successfully** __unlocked__ channel %channel%",
+            // Placeholder: %amount%
+            purge: "``✅`` Successfully __cleared__ ``%amount%`` **message(s)**",
+            // Placeholder: %user%, %verified%, %registered%, %joined%
+            history: "**__User__**\n> **Username:** %user%\n> **Verified:** ``%verified%``\n> **Registered:** ``%registered%``\n> **Joined:** ``%joined%``\n\n``(!)`` Use the **buttons** __below__ to navigate through all ``punishments``",
+            // Placeholder: %user%, %type%, %duration%, %reason%
+            notification: "Hey %user%, you have __recently__ been ``punished``\n\n> **Type:** ``%type%``\n> **Duration:** ``%duration%``\n> **Reason:** ``%reason%``\n\n``(!)`` To ``appeal`` your punishment __message__ a **staff member**",
+            // Placeholder: %user%
+            report: "``✅`` **Successfully** __submitted__ ``report`` for %user%",
+            // Placeholder: %reported_user%, %user%, %reason%
+            report_log: "``(!)`` A new __report__ has been **submitted**\n\n> **User:** %reported_user%\n> **By:** %user%\n> **Reason:** ``%reason%``",
+        },
+        errors: {
+            // Placeholder: %user%
+            invalid_timestamp: "%user%, please **provide** a __valid__ ``timestamp``, e.g. `**\"5s\"** or **\"2m\"**",
+            // Placeholder: none
+            log_channel_does_not_exist: "The __configured__ moderation ``log channel`` does **not exist**. __Skipped__ log generation",
+            // Placeholder: none
+            security_role_does_not_exist: "The __configured__ ``security role`` does **not exist**. __Denied__ command execution",
+            // Placeholder: %role%
+            lock_role_does_not_exist: "One of the __configured__ lock ``roles`` do **not exist**. __Skipped__ role ``%role%``",
+            // Placeholder: %staff%, %user%
+            user_cannot_be_punished: "%staff%, you __cannot__ **execute** ``moderation`` commands on %user%",
+            // Placeholder: none
+            message_cannot_get_deleted: "``(!)`` Messages that were sent ``14d`` ago **cannot** be __bulk deleted__ due to ``api limitations``.",
+            // Placeholder: %staff%, %user%
+            user_not_banned: "%staff%, %user% __has not__ been **banned** yet",
+            // Placeholder: %staff%, %user%
+            user_not_muted: "%staff%, %user% __has not__ been **muted** yet",
+            // Placeholder: %staff%, %user%
+            user_not_warned: "%staff%, %user% __has not__ been **warned** yet",
+            // Placeholder: %staff%, %user%
+            user_already_banned: "%staff%, %user% has __already__ been **banned**",
+            // Placeholder: %staff%, %user%
+            user_already_muted: "%staff%, %user% has __already__ been **muted**",
+            // Placeholder: none
+            unwarn_invalid_id: "%user%, please **provide** a __valid__ punishment ``ID``",
+            // Placeholder: %user%
+            use_own_panel: "%user%, please __generate__ your **own** ``panel``",
+            // Placeholder: %user%,
+            warning_already_invalidated: "%user%, the **warning** has __already__ been ``invalidated``",
+            // Placeholder: %user%
+            user_has_not_been_punished: "%staff%, %user% __has not__ been ``punished`` yet",
+            // Placeholder: %user%
+            invalid_channel: "%user%, the **report** channel has __not__ been ``configured`` yet"
+        }
+    }
+}

@@ -1,0 +1,66 @@
+Made by Alexone
+
+//
+//  >> NOTE <<
+//  I DO NOT SUGGEST EDITING THIS FILE AT ALL, YOU CANNOT BREAK ANYTHING BUT IT'S A WASTE OF TIME
+//  UNLESS YOU WANT TO TRANSLATE IT INTO ANOTHER LANGUAGE.
+//
+
+{
+    lang: {
+        unexpected_command_error: "An **error** occured while executing __command__ ``%command%``",
+        unexpected_function_error: "An **error** occured while executing __function__ ``%function%``",
+        embed_footer: "%guild% Discord Bot",
+        no_reason_provided: "No reason provided",
+        nothing_selected: "Nothing selected",
+
+        general_help_commands_description: "Select for a list of %category% commands.",
+        general_help_commands_name: "%category% commands",
+        general_help_description: "``📌`` Use the **__dropdown menu__** for a list of commands",
+        giveaway_no_requirement: "``none``",
+        moderation_history_description: "``#%number%`` %invalidated% **Reason:** __%reason%__ by %staff% at <t:%time%:R>\n",
+        moderation_history_embed: "``(!)`` %user% has been **punished** __%times% times__\n\n%description%\n\n``(!)`` **Info:** __ID:__ #**0** | __Active Punishment:__ ``❌``/``✅``",
+        ticket_leaderboard_closed: "Tickets closed",
+        ticket_leaderboard_opened: "Tickets opened",
+        ticket_canceled_process: "Canceled process",
+        ticket_application_accepted: "User Accepted",
+        ticket_unknown_user: "unknown",
+    },
+    embed_titles: {
+        general_av: "%user%'s Avatar",
+        general_info: "%user%'s Profile",
+        general_mcserver: "``📈 Mc Server Statistics``",
+        general_help: "Help Page Categories",
+        giveaway: "``🎉 Giveaway``",
+        moderation_history: "``🔨 Punishment History``",
+        moderation_punishment: "``🔨 New Punishment``",
+        moderation_report: "User Report",
+        ticket_application: "``🔖 Application Closure``",
+        ticket_ticket: "``🔖 Ticket Closure``",
+        ticket_leaderboard: "``🔖`` Ticket Leaderboard",
+        ticket_embed: "%guild% Tickets",
+        ticket_application_title: "``📝`` Application %user% ``#0%part%``",
+        ticket_application_modal: "Application Part %part%",
+        ticket_creation: "Ticket Creation",
+    },
+    "interaction_names": {
+        general_help_back: "Back",
+        general_help_forward: "Forward",
+        general_confirmation_proceed: "Proceed",
+        general_confirmation_cancel: "Cancel",
+        giveaway_enter: "Enter",
+        giveaway_entries: "Entries: %entries%",
+        moderation_history_warn: "Warns",
+        moderation_history_blacklist: "Blacklists",
+        moderation_history_kick: "Kicks",
+        moderation_history_ban: "Bans",
+        moderation_history_back: "Back",
+        moderation_report_punish: "Punish",
+        moderation_report_deny: "Deny",
+        ticket_application_continue: "Continue",
+        ticket_application_cancel: "Cancel",
+        ticket_close: "Close",
+        ticket_lower: "Lower",
+        ticket_elevate: "Elevate",
+    }
+}

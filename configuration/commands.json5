@@ -1,0 +1,65 @@
+Made by Alexone
+
+{
+    config: {
+// --------------------------
+// ----  GENERAL PLUGIN  ----
+// --------------------------
+        av: true,
+        botinfo: true,
+        help: true,
+        info: true,
+        mcserver: true,
+        ping: true,
+        restart: true, 
+        sendmsg: true,
+        server: true,
+        setup: true,
+        stealemoji: true,
+        uptime: true,
+
+// --------------------------
+// ----  TICKET PLUGIN  -----
+// --------------------------
+        tadd: true,
+        tblacklist: true,
+        tclose: true,
+        tleaderboard: true,
+        tpanel: true,
+        tremove: true,
+        trename: true,
+        tunblacklist: true,
+
+// ---------------------------
+// ---  MODERATION PLUGIN  ---
+// ---------------------------
+        ban: true,
+        history: true,
+        kick: true,
+        lock: true,
+        mute: true,
+        purge: true,
+        slowmode: true,
+        unban: true,
+        unlock: true,
+        unmute: true,
+        unwarn: true,
+        warn: true,
+
+// ---------------------------
+// ---  GIVEAWAYS PLUGIN  ----
+// ---------------------------
+        giveaway: true,
+    },
+
+
+
+
+    // ########################################################
+    // #                                                      #
+    // #  Language Configuration (not required to configure)  #
+    // #                                                      #
+    // ########################################################
+
+    lang: {}
+}

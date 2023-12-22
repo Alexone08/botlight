@@ -1,0 +1,54 @@
+Made by Alexone
+
+{
+    config: {
+        // Whether performance mode should be enabled, might lead to issues regarding requirements (Boolean)
+        performance_mode: false,
+    },
+
+
+
+
+    // ########################################################
+    // #                                                      #
+    // #  Language Configuration (not required to configure)  #
+    // #                                                      #
+    // ########################################################
+
+    lang: {
+        success: {
+            // Placeholder: %user%, %amount%, %regular%, %leaft%, %fake%
+            gcreate: "Thank you %user% for **hosting** another ``giveaway``\n\n**__Information:__**\n> **Prize:** ``%prize%``\n> **Winners:** ``%winners%``\n> **Draw:** %draw%\n\n**__Requirements:__** %requirements%\n\n``🎉`` __Click__ on the **button** to ``participate``",
+            // Placeholder: %user%, %giveaway%, %channel%
+            gcreate_success: "``✅`` %user%, you **successfully** __created__ [this](%giveaway%) giveaway in %channel%",
+            // Placeholder: %user%, %giveaway%, %channel%
+            gend: "**Congratulations** to %winner% for winning ``%prize%``",
+            // Placeholder: %user%, %giveaway%, %channel%
+            gend_success: "``✅`` %user%, you have **successfully** __drawn__ [this](%giveaway%) giveaway in %channel%"
+        },
+        errors: {
+            // Placeholder: %user%, %giveaway%, %channel%
+            invalid_time: "%user%, please **provide** a __valid__ ``duration`` length",
+            // Placeholder: %user%, %role%
+            requirement_role: "%user%, **failed** to __enter__ ``giveaway``. **Required** role: %role%",
+            // Placeholder: %user%, %level%
+            requirement_level: "%user%, **failed** to __enter__ ``giveaway``. **Required** level: ``%level%``",
+            // Placeholder: %user%, %messages%
+            requirement_messages: "%user%, **failed** to __enter__ ``giveaway``. **Required** Messages: ``%messages%``",
+            // Placeholder: %user%, %invites%
+            requirement_invites: "%user%, **failed** to __enter__ ``giveaway``. **Required** Invites: ``%invites%``",
+            // Placeholder: %user%
+            requirement: "%user%, you __do not__ **fulfill** all ``requirements``",
+            // Placeholder: %user%
+            already_entered: "%user%, you have **already** __entered__ this ``giveaway``",
+            // Placeholder: %user%
+            already_drawn: "%user%, this ``giveaway`` has __already__ been **drawn**. Use ``/greroll`` instead",
+            // Placeholder: %user%
+            invalid_participations: "%user%, this ``giveaway`` **cannot** be __drawn__ due to **invalid** ``participations``",
+            // Placeholder: %user%
+            still_running: "%user%, the **giveaway** is __still__ ``running``",
+            // Placeholder: %user%
+            failed_data_loading: "%user%, an **error** __occured__ while loading ``giveaway data``. Does it **exist**?"
+        }
+    }
+}

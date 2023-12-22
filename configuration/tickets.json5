@@ -1,0 +1,154 @@
+Made by Alexone
+
+{
+    config: {
+        // Whether the ticket creator should receive a copy of the transcript (Boolean)
+        send_transcript_to_ticket_creator: true,
+        // Channel ID - Ticket logs (String)
+        ticket_log_channel: "804354132227260446",
+        // Whether ticket transcripts should be saved on disk - C:%default%/Ticket Bot/data/ticket_transcripts - (Boolean)
+        save_ticket_transcript_on_disk: true,
+        // Ticket Channel Name, Available Placeholder: %random%, %creator%, %created_total% (String)
+        ticket_channel_name: "ticket-%random%",
+        // Max messages at transcript
+        ticket_transcript_message_limit: 200,
+        // Whether ticket should be automatically closed when the ticket creator leaves the discord (Boolean)
+        close_ticket_after_creator_left: true,
+
+
+        ticket_categories: [
+        {
+            // Ticket Category Name (String)
+            category: "Factions Support",
+            // Ticket Category description (String)
+            description: "Select to crea a Factions related Ticket.",
+            // Custom or default Emoji - https://emojidb.org/discord-copy-and-paste-emojis - 
+            // https://support.discord.com/hc/en-us/community/posts/360038896012-Can-Get-Emoji-ID-When-You-re-On-Chrome#:~:text=You%20can%20get%20the%20Emoji%20ID%20by%20writing,then%20press%20enter%20and%20u%20have%20the%20ID. (String) 
+            emoji: "<:minecraftTnT:895757364651778108>",
+            // Category ID (String)
+            category_id: "833732233021751306",
+            // Placeholder: %creator%, %ticket_channel% (String)
+            embed_create_description: "Hey %creator%,\nThank you for creating %ticket_channel%, we will get back to you as soon as possible.\n\nWhilst you are waiting for a response please explain the reason why you created this ticket by following this format:\n\n``IGN:``\n``Realm:``\n``Reason:``\n​",
+            // Default Private Stage -> look below "private_stages" (Integer)
+            default_private_stage: 0,
+            // Role/User IDs - Permission to see ticket (Array)
+            permissions: [
+                "804354029076348959",
+            ],
+            // Role/User IDs - Mention following roles/users whenever this ticket type is being created (Array)
+            mention_roles: [
+                "804354029076348959",
+            ]
+        },
+        {
+            category: "Skyblock Support",
+            description: "Select to create a Skyblock related Ticket.",
+            emoji: "<:minecraftSugercane:895757364483997707>",
+            category_id: "833732304366338128",
+            embed_create_description: "Hey %creator%,\nThank you for creating %ticket_channel%, we will get back to you as soon as possible.\n\nWhilst you are waiting for a response please explain the reason why you created this ticket by following this format:\n\n``IGN:``\n``Realm:``\n``Reason:``\n​",
+            default_private_stage: 0,
+            permissions: [
+                "804354029076348959",
+            ],
+            mention_roles: []
+        },
+        {
+            category: "Prison Support",
+            description: "Select to create a Prison related Ticket.",
+            emoji: "<:minecraftPickaxe:895757364710481940>",
+            category_id: "833732276839776266",
+            embed_create_description: "Hey %creator%,\nThank you for creating %ticket_channel%, we will get back to you as soon as possible.\n\nWhilst you are waiting for a response please explain the reason why you created this ticket by following this format:\n\n``IGN:``\n``Realm:``\n``Reason:``\n​",
+            default_private_stage: 0,
+            permissions: [
+                "804354029076348959",
+            ],
+            mention_roles: []
+        },
+        {
+            category: "Buycraft Support",
+            description: "Select to create a Buycraft related Ticket.",
+            emoji: "<:minecraftEmerald:895757364295249971>",
+            category_id: "833732331889885214",
+            embed_create_description: "Hey %creator%,\nThank you for creating %ticket_channel%, we will get back to you as soon as possible.\n\nWhilst you are waiting for a response please explain the reason why you created this ticket by following this format:\n\n``IGN:``\n``Transcation ID:``\n``Issue:``\n​",
+            default_private_stage: 2,
+            permissions: [
+                "804354019455139900",
+            ],
+            mention_roles: []
+        },
+        {
+            category: "Staff Report",
+            description: "Select to create a Staff Report.",
+            emoji: "<:minecraftGrid:895757364777603103>",
+            category_id: "833732404548075550",
+            embed_create_description: "Hey %creator%,\nThank you for creating %ticket_channel%, we will get back to you as soon as possible.\n\nWhilst you are waiting for a response please explain the reason why you created this ticket by following this format:\n\n``IGN:``\n``Staff Member:``\n``Reason:``\n​",
+            default_private_stage: 3,
+            permissions: [
+                "804354017580810260",
+            ],
+            mention_roles: []
+        },
+        {
+            category: "Application",
+            description: "Select to create an Application.",
+            emoji: "<:minecraftBook:895757364773404703>",
+            application: true,
+            category_id: "833732469730574377",
+            embed_create_description: "Hey %creator%,\nThank you for creating %ticket_channel%, we will get back to you as soon as possible.\n\nWhilst you are waiting for a response please start the application proccess by clicking on the apply button.\n​",
+            default_private_stage: 3,
+            permissions: [
+                "804354019455139900",
+            ],
+            mention_roles: []
+        }
+        ],
+    },
+
+
+
+
+    // ########################################################
+    // #                                                      #
+    // #  Language Configuration (not required to configure)  #
+    // #                                                      #
+    // ########################################################
+
+    lang: {
+        success: {
+            // Placeholder: %target%
+            add: "``✅`` %target% has been **successfully** __added__ to this ``ticket``",
+            // Placeholder: %target%
+            remove: "``✅`` %target% has been **successfully** __removed__ from this ``ticket``",
+            //Placeholder: %target%
+            blacklist: "``✅`` %target% has been **successfully** __blacklisted__ from the ``ticket system``",
+            //Placeholder: %target%
+            unblacklist: "``✅`` %target% has been **successfully** __unblacklisted__ from the ``ticket system``",
+            // Placeholders: %channel%, %name%
+            rename: "``✅`` %channel% has been **successfully** __renamed__ to ``%name%``",
+            // Placeholders: %channel_name%, %creator%, %category%, %emoji%, %user%, %reason%, %days%, %hours%, %minutes%, %seconds%
+            close: "> **Ticket Name:** ``%channel_name%``\n> **Ticket Creator:** %creator%\n> **Category:** %emoji% ``%category%``\n> **Closed by:** %user%\n> **Reason:** ``%reason%``\n\n``🕐`` This ticket was open for ``%days%``d ``%hours%``h ``%minutes%``m ``%seconds%``s!",
+            // Placeholders: %ticket_categories%
+            panel: "``🎫`` Please select the option that corresponds with your ticket.\n\n%ticket_categories%",
+            // Placeholder: %message_url%, %channel%
+            tpanel_success: "``✅`` __Successfully__ generated the [ticketpanel](%message_url%) in %channel%",
+            // Placeholder: %user%, %category%, %channel%
+            create_success: "``✅`` %user%, **successfully** __created__ ``%category%`` Ticket %channel%"
+        },
+        errors: {
+            // Placeholder: %user%
+            reached_maximum_amount: "%user%, you can only have up to ``1`` ticket open **per category** at the __same time__",
+            // Placeholder: %user%
+            blacklisted: "%user%, you are __unable__ to use the ticket system due to you being **blacklist**.",
+            // Placeholder: %user%, %target%
+            already_blacklisted: "%user%, %target% has __already__ been **blacklisted**",
+            // Placeholder: %user%, %target%
+            not_blacklisted: "%user%, %target% has __not__ been **blacklisted** yet",
+            // Placeholder: %user%
+            cant_use_command_outside_of_tickets: "%user%, you **cannot** use this command __outside__ of tickets",
+            // Placeholder: %user%, %type%
+            invalid_log_channel: "%user%, an **error** occured while __loading__ %type% ``log channel``. Does it exist?",
+            // Placeholder: none
+            invalid_category: "An **error** occured while __fetching__ ``category data`` from config file. Does it exist?",
+        }
+    }
+}
